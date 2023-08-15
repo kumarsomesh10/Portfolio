@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  HStack,
-  Heading,
-  Stack,
-  Tag,
-  TagLabel,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Heading, Stack, Tag, TagLabel } from "@chakra-ui/react";
 
 const Skills = () => {
   return (
