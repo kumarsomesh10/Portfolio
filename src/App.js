@@ -1,4 +1,3 @@
-// import React, { useEffect } from "react";
 import "./styles/App.css";
 import "./styles/ScrollBar.css";
 import "./styles/Background.css";
