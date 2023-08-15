@@ -1,0 +1,38 @@
+.typewriter-text {
+  font-size: 50px;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 2.5s steps(20, end),
+             blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .typewriter-text {
+    font-size: 30px; /* Adjust as needed for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typewriter-text {
+    font-size: 24px; /* Adjust as needed for even smaller screens */
+    padding: 2px;
+    /* background-color: white; */
+    color: white;
+  }
+}
