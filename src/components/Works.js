@@ -83,7 +83,7 @@ const Works = () => {
             </CardBody>
             <Image
               objectFit="cover"
-              src="https://i.imgur.com/8BJSD78.jpg"
+              src="https://i.imgur.com/gYWSSiA.jpg"
               alt="Chakra UI"
               borderRadius="6"
             />

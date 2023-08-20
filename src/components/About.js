@@ -20,7 +20,9 @@ const About = () => {
         justifyContent="center"
         alignItems="center"
         textColor="white"
-        marginTop={["30px", "40px"]}
+        marginTop={["100px", "40px", "100px"]}
+        // borderWidth="1px"
+        // borderColor={"white"}
       >
         <Heading size="3xl" fontWeight={"bold"}>
           About Me
