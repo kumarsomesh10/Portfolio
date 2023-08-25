@@ -9,23 +9,42 @@ const Experience = () => {
         justifyContent="center"
         alignItems="center"
         height={["40vh", "60vh"]}
-        textColor="white"
+        textColor="#292f36"
+        fontSize={"xl"}
         // borderColor="red"
         // borderWidth="5px"
       >
-        <VStack spacing={5}>
+        <VStack spacing={6}>
           <Heading size="3xl">Experiece</Heading>
           <Box>
             <Text padding="5px">Data Structure and Algorithm</Text>
-            <Progress value={80} width="80vw" height="5px" />
+            <Progress
+              padding={"3px"}
+              bg={"#292f36"}
+              value={70}
+              width="80vw"
+              height="10px"
+            />
           </Box>
           <Box>
             <Text padding="5px">Web Development</Text>
-            <Progress value={60} width="80vw" height="5px" />
+            <Progress
+              padding={"3px"}
+              bg={"#292f36"}
+              value={60}
+              width="80vw"
+              height="10px"
+            />
           </Box>
           <Box>
             <Text padding="5px">Machine Learning </Text>
-            <Progress value={20} width="80vw" height="5px" />
+            <Progress
+              padding={"3px"}
+              bg={"#292f36"}
+              value={30}
+              width="80vw"
+              height="10px"
+            />
           </Box>
         </VStack>
       </Box>

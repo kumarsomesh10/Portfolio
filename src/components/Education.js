@@ -15,7 +15,7 @@ const Education = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        textColor="white"
+        textColor="#292f36"
         marginTop={["30px", "40px"]}
         marginBottom={"20px"}
       >
@@ -28,7 +28,8 @@ const Education = () => {
         justifyContent="center"
         alignItems="center"
         height={["80vh", "100vh", "40vh"]}
-        textColor="white"
+        textColor="#292f36"
+        fontSize={"xl"}
         // borderColor="red"
         // borderWidth="1px"
       >

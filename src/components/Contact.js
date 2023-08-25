@@ -23,7 +23,7 @@ const Contact = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        textColor="white"
+        textColor="#292f36"
         marginTop={["30px", "40px"]}
       >
         <Heading size="3xl" fontWeight={"bold"}>
@@ -35,7 +35,7 @@ const Contact = () => {
         justifyContent="center"
         alignItems="center"
         height={["140vh", "155vh", "100vh"]}
-        textColor="white"
+        textColor="#292f36"
       >
         <Stack spacing={[4, 8, 8]}>
           <Stack
@@ -61,6 +61,7 @@ const Contact = () => {
                     marginBottom="15px"
                     type="name"
                     name="name"
+                    borderColor={"#292f36 "}
                     required
                   />
                 </FormControl>
@@ -71,6 +72,7 @@ const Contact = () => {
                     marginBottom="15px"
                     type="email"
                     name="email"
+                    borderColor={"#292f36 "}
                     required
                   />
                 </FormControl>
@@ -84,6 +86,7 @@ const Contact = () => {
                     size="lg"
                     width={["85vw", "85vw", "60vw"]}
                     height="200px"
+                    borderColor={"#292f36 "}
                     required
                   />
                 </FormControl>
@@ -91,13 +94,13 @@ const Contact = () => {
                   type="submit"
                   width="10vw"
                   marginTop="30px"
-                  colorScheme="gray"
+                  colorScheme="#292f36"
                   variant="outline"
-                  textColor="white"
+                  textColor="#292f36"
                   sx={{
                     "&:hover": {
                       color: "black", // Text color when hovering
-                      backgroundColor: "white", // Background color when hovering
+                      backgroundColor: "#008080", // Background color when hovering
                     },
                   }}
                 >
@@ -118,7 +121,7 @@ const Contact = () => {
                   <Icon
                     as={BiLogoGmail}
                     boxSize={8}
-                    color="white"
+                    color="#292f36"
                     style={{ marginRight: "10px" }}
                   />
                   Email : kumarsomesh002@gmail.com
@@ -127,7 +130,7 @@ const Contact = () => {
                   <Icon
                     as={BiSolidPhoneCall}
                     boxSize={8}
-                    color="white"
+                    color="##292f36"
                     style={{ marginRight: "10px" }}
                   />
                   Contact No. : +91 8009728254
@@ -146,7 +149,16 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Icon as={FaLinkedin} boxSize={8} color="white" />
+                  <Icon
+                    as={FaLinkedin}
+                    boxSize={8}
+                    color="#292f36"
+                    _hover={{
+                      transform: "scale(1.05)", // Scale up on hover
+                      boxShadow: "rgba(0, 0, 0, 0.99) 0px 5px 15px", // Adjust the box shadow on hover
+                      borderRadius: "4px",
+                    }}
+                  />
                 </a>
                 <a
                   href="https://github.com/kumarsomesh10"
@@ -154,7 +166,16 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   style={{ marginLeft: "20px" }}
                 >
-                  <Icon as={FaGithub} boxSize={8} color="white" />
+                  <Icon
+                    as={FaGithub}
+                    boxSize={8}
+                    color="#292f36"
+                    _hover={{
+                      transform: "scale(1.05)", // Scale up on hover
+                      boxShadow: "rgba(0, 0, 0, 0.99) 0px 5px 15px", // Adjust the box shadow on hover
+                      borderRadius: "15px",
+                    }}
+                  />
                 </a>
                 <a
                   href="https://www.instagram.com/_kumar_somesh_/"
@@ -162,7 +183,16 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   style={{ marginLeft: "20px" }}
                 >
-                  <Icon as={FaInstagram} boxSize={8} color="white" />
+                  <Icon
+                    as={FaInstagram}
+                    boxSize={8}
+                    color="#292f36"
+                    _hover={{
+                      transform: "scale(1.05)", // Scale up on hover
+                      boxShadow: "rgba(0, 0, 0, 0.99) 0px 5px 15px", // Adjust the box shadow on hover
+                      borderRadius: "8px",
+                    }}
+                  />
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=100058823026874&mibextid=ZbWKwL"
@@ -170,21 +200,30 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   style={{ marginLeft: "20px" }}
                 >
-                  <Icon as={FaFacebook} boxSize={8} color="white" />
+                  <Icon
+                    as={FaFacebook}
+                    boxSize={8}
+                    color="#292f36"
+                    _hover={{
+                      transform: "scale(1.05)", // Scale up on hover
+                      boxShadow: "rgba(0, 0, 0, 0.99) 0px 5px 15px", // Adjust the box shadow on hover
+                      borderRadius: "15px",
+                    }}
+                  />
                 </a>
               </Box>
             </Box>
           </Stack>
         </Stack>
       </Box>
-      <Box textAlign="center" padding="2" bgColor="white">
+      <Box textAlign="center" padding="2" bgColor="#292f36">
         <Flex
           as="footer"
           justifyContent="center"
           alignItems="center"
           padding="2"
         >
-          <Text>
+          <Text color={"#EEEEEE "}>
             Doing work with love{" "}
             <Icon as={AiFillHeart} boxSize={4} color="red" /> and efforts...
           </Text>

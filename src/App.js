@@ -10,8 +10,8 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div>
-      <body className="content">
-        <div className="background-image">
+      <body>
+        <div className="background">
           <Navbar />
           <Portfolioheader />
           <About />
@@ -24,3 +24,11 @@ function App() {
 }
 
 export default App;
+
+// Sophisticated and Professional:
+
+// Primary Color: #292f36 (Charcoal)
+// Accent Color: #008080 (Teal)
+// Highlight Color: #6b8e23 (Olive)
+// Background Color: #EEEEEE (Light Gray)
+// Subtle Contrast: #cccccc (Gray)

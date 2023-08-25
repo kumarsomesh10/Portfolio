@@ -19,7 +19,7 @@ const About = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        textColor="white"
+        textColor="#292f36"
         marginTop={["100px", "40px", "100px"]}
         // borderWidth="1px"
         // borderColor={"white"}
@@ -43,7 +43,7 @@ const About = () => {
           marginTop={["", "30px", ""]}
           width={"80vw"}
           bg={"none"}
-          textColor={"white"}
+          textColor={"#292f36"}
           border="none"
         >
           <Image

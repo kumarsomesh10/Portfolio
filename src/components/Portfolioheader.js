@@ -8,13 +8,11 @@ const Portfolioheader = () => {
     <div>
       <div id="header">
         <Box
-          height={["75vh", "auto", "auto", "110vh"]}
+          height={["75vh", "auto", "auto", "100vh"]}
           width={["100vw", "100vw", "100vw"]}
-          textColor="white"
-          marginTop={["2vh", "5vh", "0vh"]}
+          textColor="#292f36"
+          marginTop={["2vh", "5vh", "-14vh"]}
           padding={"50px"}
-          // borderWidth="1px"
-          // borderColor="red"
         >
           <Stack
             direction={["column", "column", "column", "row"]}

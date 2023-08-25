@@ -1,14 +1,9 @@
-.content{
+
+.background {
     width: 100vw;
-    background-color: #333;
-}
-/* styles.css */
-.background-image {
-    /* background-image: url('https://i.imgur.com/HDwyUo1.jpg'); */
-    background-color: #333;
+    background-color: #EEEEEE;
     background-position: "right";
     background-size: cover;
-    background-attachment: fixed; /* Keep the background image fixed */
-    /* transition: background-color 0.5s ease;  */
+    background-attachment: fixed;
   }
   
