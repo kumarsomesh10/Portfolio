@@ -52,7 +52,8 @@ const About = () => {
           <Image
             alignItems={"center"}
             padding={"1%"}
-            height={"70vh"}
+            maxH={"70vh"}
+            height={"auto"}
             width={["auto", "auto", "auto"]}
             mx={{ base: "auto", md: "auto", lg: "0" }}
             src="https://i.imgur.com/P1Ns2Y9.png"
