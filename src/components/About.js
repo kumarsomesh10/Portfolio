@@ -33,24 +33,27 @@ const About = () => {
         justifyContent="center"
         alignItems="center"
         minH={"100vh"}
-        height={["170vh", "150vh", "100vh"]}
+        height={"auto"}
       >
         <Card
-          direction={{ base: "column", md: "column", lg: "row" }}
+          direction={["column", "column", "column", "row", "row"]}
           overflow="hidden"
           variant="outline"
-          height={["155vh", "155vh", "80vh"]}
+          height={"auto"}
           marginTop={["", "30px", ""]}
+          padding={"10px"}
           width={"80vw"}
           bg={"none"}
           textColor={"#292f36"}
           border="none"
+          borderRadius={"5px"}
+          shadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}
         >
           <Image
             alignItems={"center"}
             padding={"1%"}
             height={"70vh"}
-            width={["", "60vw", ""]}
+            width={["auto", "auto", "auto"]}
             mx={{ base: "auto", md: "auto", lg: "0" }}
             src="https://i.imgur.com/P1Ns2Y9.png"
             alt="Somesh Kumar"

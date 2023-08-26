@@ -10,6 +10,7 @@ const Skills = () => {
         alignItems="center"
         textColor="#292f36"
         marginTop={["30px", "40px"]}
+        marginBottom={["30px", "10px"]}
       >
         <Heading size="3xl" fontWeight={"bold"}>
           Skills
@@ -19,7 +20,7 @@ const Skills = () => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        height="55vh"
+        height="60vh"
         textColor="#292f36"
       >
         <Stack direction={["column", "column", "column"]} spacing={[4, 8, 8]}>
