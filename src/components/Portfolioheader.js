@@ -33,7 +33,7 @@ const Portfolioheader = () => {
                 height={"auto"}
                 width={["", "60vw", ""]}
                 mx={{ base: "auto", md: "auto", lg: "0" }}
-                src="https://i.imgur.com/R5AJOzU.png"
+                src="/images/developer1.png"
                 alt="Somesh Kumar"
                 borderRadius="5%"
               />
