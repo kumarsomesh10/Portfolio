@@ -61,7 +61,7 @@ const Navbar = () => {
           Hello 👋 Guest
         </Text>
         <Avatar
-          name="Dan Abrahmov"
+          name="Somesh Kumar"
           src="https://i.imgur.com/P1Ns2Y9.png"
           _hover={{
             transform: "scale(1.1)", // Scale up on hover
@@ -123,6 +123,22 @@ const Navbar = () => {
                 onClick={() => scrollToSection("#about")}
               >
                 About
+              </Button>
+            </Box>
+            <Box marginLeft={["20px", "0px"]}>
+              <Button
+                colorScheme="gray"
+                variant="ghost"
+                textColor="#292f36"
+                sx={{
+                  "&:hover": {
+                    color: "black",
+                    backgroundColor: "#008080",
+                  },
+                }}
+                onClick={() => scrollToSection("#internship")}
+              >
+                Internship
               </Button>
             </Box>
             <Box marginLeft={["20px", "0px"]}>
