@@ -1,27 +1,27 @@
 import {
   Box,
   Card,
-  CardHeader,
   CardBody,
   Image,
-  Flex,
   Heading,
-  IconButton,
   Text,
+  ChakraProvider,
+  Stack,
+  CardFooter,
+  Button,
+  ButtonGroup,
+  Divider,
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
-import { BiLinkExternal } from "react-icons/bi";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const cards = [
   {
-    title: "ChatHub",
+    title: "IdeaBox",
     tech: "ReactJS, Express, Node.js, and MongoDB",
     description:
-      "Facilitates real-time communication through both one-on-one and      group messaging. Ensures security through a streamlined      signup/sign-in process. Utilizes socket.io for instantaneous      message exchange. Designed with an intuitive user interface for      initiating chats and group conversations.",
-    imageSrc: "https://i.imgur.com/SGxcFc2.jpg",
+      "MERN Stack web application that empowers users to efficiently manage their unique ideas with comprehensive CRUD functionality. Prioritizing data security, our platform offers robust user authentication, including Google Sign-In. We enhance the user experience by enabling seamless access to stored ideas through sessions and cookies, eliminating repeated logins.",
+    imageSrc: "/images/ideabox.jpg",
     githubLink: "https://github.com/kumarsomesh10",
   },
   {
@@ -33,6 +33,13 @@ const cards = [
     githubLink: "https://github.com/kumarsomesh10",
   },
   {
+    title: "LawBot",
+    tech: "ReactJS, Express, Node.js, and MongoDB",
+    description: `LawBot, with its intuitive interface, seamlessly harnesses the OpenAI API for precise query analysis. It effectively stores and retrieves an extensive legal database through ChromaDB, enhancing its knowledge base. This system excels in delivering highly accurate legal answers, providing users with valuable insights and information firmly grounded in the Indian Constitution.`,
+    imageSrc: "/images/lawbot.jpg",
+    githubLink: "https://github.com/kumarsomesh10",
+  },
+  {
     title: "Portfolio Website",
     tech: "React, Chakra UI",
     description:
@@ -40,142 +47,91 @@ const cards = [
     imageSrc: "https://i.imgur.com/svrWCV3.jpg",
     githubLink: "https://github.com/kumarsomesh10",
   },
-  // ... add more cards
+  {
+    title: "ChatHub",
+    tech: "ReactJS, Express, Node.js, and MongoDB",
+    description:
+      "Facilitates real-time communication through both one-on-one and group messaging. Ensures security through a streamlined      signup/sign-in process. Utilizes socket.io for instantaneous      message exchange. Designed with an intuitive user interface for      initiating chats and group conversations.",
+    imageSrc: "https://i.imgur.com/SGxcFc2.jpg",
+    githubLink: "https://github.com/kumarsomesh10",
+  },
 ];
 
 const Works = () => {
   return (
-    <Box
-      id="works"
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      flexDirection={"column"}
-      height={"auto"}
-    >
+    <ChakraProvider>
       <Box
+        id="works"
         display="flex"
         justifyContent="center"
         alignItems="center"
-        textColor="#292f36"
-        marginTop={["30px", "10px"]}
-        marginBottom={"50px"}
+        flexDirection={"column"}
+        height={"auto"}
       >
-        <Heading size="3xl" fontWeight={"bold"}>
-          My Works
-        </Heading>
-      </Box>
-      <Carousel
-        width={"100vw"}
-        infiniteLoop
-        autoPlay
-        showArrows={true}
-        renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (
-            <button
-              type="button"
-              onClick={onClickHandler}
-              title={label}
-              style={{
-                position: "absolute",
-                // zIndex: 2,
-                top: "calc(50% - 20px)",
-                left: "20px",
-                color: "teal", // Customize the arrow color
-                fontSize: "24px", // Customize the arrow size
-              }}
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          textColor="#292f36"
+          marginTop={["30px", "10px"]}
+          marginBottom={"50px"}
+        >
+          <Heading size="3xl" fontWeight={"bold"}>
+            My Works
+          </Heading>
+        </Box>
+        <Box
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center" // Center align cards horizontally
+          gap={4} // Adjust the gap between cards
+        >
+          {cards.map((card, index) => (
+            <Card
+              key={index}
+              maxW="sm"
+              width={[
+                "90%",
+                "90%",
+                "calc(33.33% - 2rem)",
+                "calc(33.33% - 1rem)",
+              ]} // Make the cards full-width on mobile and 1/3 width on desktop
+              marginBottom={4}
             >
-              <FaArrowLeft />
-            </button>
-          )
-        }
-        renderArrowNext={(onClickHandler, hasNext, label) =>
-          hasNext && (
-            <button
-              type="button"
-              onClick={onClickHandler}
-              title={label}
-              style={{
-                position: "absolute",
-                // zIndex: 2,
-                top: "calc(50% - 20px)",
-                right: "20px",
-                color: "teal", // Customize the arrow color
-                fontSize: "24px", // Customize the arrow size
-              }}
-            >
-              <FaArrowRight />
-            </button>
-          )
-        }
-      >
-        {cards.map((card, index) => (
-          <Card
-            key={index}
-            height={"auto"}
-            width={"auto"}
-            display="grid"
-            gridTemplateColumns={["1fr", "1fr", "1fr", "1fr", "2fr 3fr"]} // Adjust column widths as needed
-            p={["15px", "15px", "50px"]}
-            m={["8vw", "8vw", "5vh 30vh 1vh 30vh"]}
-            bgColor="none"
-            textColor="#292f36"
-            borderColor="#292f36"
-            // borderWidth="3px"
-            shadow={
-              "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"
-            }
-          >
-            <Box>
-              <CardHeader>
-                <Flex spacing="4">
-                  <Flex
-                    flex="1"
-                    gap="4"
-                    alignItems="flex-start"
-                    flexWrap="wrap"
-                  >
-                    <Box>
-                      <Heading size="md" textAlign="left">
-                        {card.title}
-                      </Heading>
-                      <Text textAlign="left">{card.tech}</Text>
-                    </Box>
-                  </Flex>
-                  <a
-                    href={card.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <IconButton
-                      colorScheme="#292f36"
-                      variant="outline"
-                      textColor="#292f36"
-                      sx={{
-                        "&:hover": {
-                          color: "black",
-                          backgroundColor: "#008080",
-                        },
-                      }}
-                      icon={<BiLinkExternal />}
-                    />
-                  </a>
-                </Flex>
-              </CardHeader>
-              <CardBody marginTop={"-30px"}>
-                <Text textAlign="left">{card.description}</Text>
+              <CardBody>
+                <Image
+                  src={card.imageSrc}
+                  alt="Image"
+                  borderRadius="lg"
+                  border="2px"
+                  borderColor="#292f36"
+                />
+                <Stack mt="6" spacing="3">
+                  <Heading size="md">{card.title}</Heading>
+                  <Text>{card.description}</Text>
+                  <Text color="blue.600" fontSize="sm">
+                    {card.tech}
+                  </Text>
+                </Stack>
               </CardBody>
-            </Box>
-            <Image
-              objectFit="cover"
-              src={card.imageSrc}
-              alt={card.title}
-              borderRadius="6"
-            />
-          </Card>
-        ))}
-      </Carousel>
-    </Box>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing="2">
+                  <Link href={card.githubLink} isExternal>
+                    <Button variant="solid" colorScheme="blue">
+                      Source Code
+                    </Button>
+                  </Link>
+                  <Button variant="ghost" colorScheme="blue">
+                    Deploy Link
+                  </Button>
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+          ))}
+        </Box>
+      </Box>
+    </ChakraProvider>
   );
 };
 

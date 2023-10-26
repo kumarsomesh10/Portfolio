@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Image } from "@chakra-ui/react"; // Import Chakra UI components
+import { Box, Stack, Image, ChakraProvider } from "@chakra-ui/react"; // Import Chakra UI components
 
 import Welcometxt from "./Welcometxt";
 
@@ -7,39 +7,41 @@ const Portfolioheader = () => {
   return (
     <div>
       <div id="header">
-        <Box
-          height={["75vh", "auto", "auto", "100vh"]}
-          width={["100vw", "100vw", "100vw"]}
-          textColor="#292f36"
-          marginTop={["2vh", "5vh", "-14vh"]}
-          padding={"50px"}
-        >
-          <Stack
-            direction={["column", "column", "column", "row"]}
-            spacing={50}
-            align="center"
+        <ChakraProvider>
+          <Box
+            height={["75vh", "auto", "auto", "100vh"]}
+            width={["100vw", "100vw", "100vw"]}
+            textColor="#292f36"
+            marginTop={["2vh", "5vh", "-14vh"]}
+            padding={"50px"}
           >
-            <Box width={"auto"} marginTop={["20px", "", ""]}>
-              <Welcometxt />
-            </Box>
-            <Box
-              marginLeft={["", "", "20px"]}
-              width={"auto"}
-              marginTop={["50px", "", ""]}
+            <Stack
+              direction={["column", "column", "column", "row"]}
+              spacing={50}
+              align="center"
             >
-              <Image
-                alignItems={"center"}
-                padding={"1%"}
-                height={"auto"}
-                width={["", "60vw", ""]}
-                mx={{ base: "auto", md: "auto", lg: "0" }}
-                src="/images/developer1.png"
-                alt="Somesh Kumar"
-                borderRadius="5%"
-              />
-            </Box>
-          </Stack>
-        </Box>
+              <Box width={"auto"} marginTop={["20px", "", ""]}>
+                <Welcometxt />
+              </Box>
+              <Box
+                marginLeft={["", "", "20px"]}
+                width={"auto"}
+                marginTop={["50px", "", ""]}
+              >
+                <Image
+                  alignItems={"center"}
+                  padding={"1%"}
+                  height={"auto"}
+                  width={["", "60vw", ""]}
+                  mx={{ base: "auto", md: "auto", lg: "0" }}
+                  src="/images/developer1.png"
+                  alt="Somesh Kumar"
+                  borderRadius="5%"
+                />
+              </Box>
+            </Stack>
+          </Box>
+        </ChakraProvider>
       </div>
       <body className="content"></body>
     </div>
