@@ -31,7 +31,7 @@ const Experience = () => {
             <Progress
               padding={"3px"}
               bg={"#292f36"}
-              value={60}
+              value={80}
               width="80vw"
               height="10px"
             />
