@@ -22,7 +22,7 @@ const cards = [
     title: "Groweasy Landing Page",
     tech: "HTML, CSS, ReactJS",
     description:
-      "MERN Stack web application that empowers users to efficiently manage their unique ideas with comprehensive CRUD functionality. Prioritizing data security, our platform offers robust user authentication, including Google Sign-In. We enhance the user experience by enabling seamless access to stored ideas through sessions and cookies, eliminating repeated logins.",
+      "In my Groweasy landing page project, I translated a Figma design into a fully functional webpage from scratch. Using vanilla CSS, I meticulously styled and made the page responsive. I also integrated a user-friendly email submission form for visitors to receive future notifications from the company, creating an engaging landing page that boosts the company's online presence and user interaction.",
     imageSrc: "/images/groweasyLandingpage.jpg",
     githubLink: "",
     deployLink: "https://groweasy.ai/",
@@ -31,7 +31,7 @@ const cards = [
     title: "Poster Designing App",
     tech: "HTML, CSS, ReactJS, Canvas",
     description:
-      "Seamlessly engages users through efficient user registration and    login functions. Authenticated users access personalized    dashboards, enhancing (CRUD) operations. Leveraging the MERN    stack, prioritizes security by granting only authors the ability    to modify their own posts.",
+      "In my Poster Designing App project, I created an easy-to-use application for designing attractive posters. Users can choose from three frame options: landscape, portrait, and square, and are able to download their creations as JPG images. This project enhances design capabilities and offers a user-friendly poster creation experience.",
     imageSrc: "/images/posterDesigningapp.jpg",
     githubLink: "",
     deployLink: "https://bannerdesigning-app.netlify.app/",
@@ -110,17 +110,7 @@ const Experience = () => {
               gap={4} // Adjust the gap between cards
             >
               {cards.map((card, index) => (
-                <Card
-                  key={index}
-                  maxW="sm"
-                  width={[
-                    "90%",
-                    "90%",
-                    "calc(33.33% - 2rem)",
-                    "calc(90% - 1rem)",
-                  ]} // Make the cards full-width on mobile and 1/3 width on desktop
-                  marginBottom={4}
-                >
+                <Card key={index} maxW="lg" marginBottom={4}>
                   <CardBody>
                     {card.imageSrc !== "" ? (
                       <Image
